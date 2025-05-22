@@ -422,16 +422,18 @@ body {
 
 /* Note card styles */
 .note-card {
-  background-color: var(--kavia-dark-lighter);
-  border-radius: 8px;
+  background-color: rgba(20, 25, 39, 0.7);
+  border-radius: 12px;
   border: 1px solid var(--border-color);
-  padding: 16px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  transition: all 0.2s ease;
+  gap: 14px;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .note-card:before {
@@ -439,30 +441,35 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 4px;
+  width: 5px;
   height: 100%;
   background-color: var(--thought-color);
+  box-shadow: 0 0 8px var(--thought-color);
 }
 
 .note-card.idea:before {
   background-color: var(--idea-color);
+  box-shadow: 0 0 8px var(--idea-color);
 }
 
 .note-card.reminder:before {
   background-color: var(--reminder-color);
+  box-shadow: 0 0 8px var(--reminder-color);
 }
 
 .note-card.memory:before {
   background-color: var(--memory-color);
+  box-shadow: 0 0 8px var(--memory-color);
 }
 
 .note-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--shadow-color);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .note-card.pinned {
   border-color: var(--kavia-orange);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 10px var(--kavia-orange-glow);
 }
 
 .note-header {
