@@ -59,3 +59,23 @@ src/components/NoteInput.js
 Search for the keywords to learn more about each error.
 
 webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/NoteInput.js
+  Line 14:31:  'FaBrain' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/App.js
+  Line 62:9:  'noteCounts' is assigned a value but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/components/NoteInput.js
+  Line 14:31:  'FaBrain' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
