@@ -21,19 +21,59 @@
   --memory-color: #9D50BB;
 }
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
   margin: 0;
-  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Exo 2', 'Roboto', 'Helvetica', 'Arial', sans-serif;
   background-color: var(--kavia-dark);
+  background-image: linear-gradient(135deg, var(--kavia-dark) 0%, #12151F 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.03em;
 }
 
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.brain-bg {
+  position: fixed;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.brain-bg-1 {
+  top: 5%;
+  right: -30%;
+  width: 80%;
+  height: 80%;
+  transform: rotate(15deg);
+}
+
+.brain-bg-2 {
+  bottom: -10%;
+  left: -20%;
+  width: 65%;
+  height: 65%;
+  transform: rotate(-10deg);
 }
 
 /* Header styling */
