@@ -58,14 +58,14 @@ function App() {
   
   const displayedNotes = getFilteredNotes();
   
-  // Compute counts for note types
-  const noteCounts = {
-    total: notes.length,
-    thought: notes.filter(n => n.type === 'thought').length,
-    idea: notes.filter(n => n.type === 'idea').length,
-    reminder: notes.filter(n => n.type === 'reminder').length,
-    memory: notes.filter(n => n.type === 'memory').length,
-  };
+  // Note counts are available here if needed in the future
+  // const noteCounts = {
+  //   total: notes.length,
+  //   thought: notes.filter(n => n.type === 'thought').length,
+  //   idea: notes.filter(n => n.type === 'idea').length,
+  //   reminder: notes.filter(n => n.type === 'reminder').length,
+  //   memory: notes.filter(n => n.type === 'memory').length,
+  // };
 
   return (
     <div className="app">
