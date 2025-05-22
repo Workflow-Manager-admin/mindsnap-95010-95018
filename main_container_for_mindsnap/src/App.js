@@ -73,6 +73,10 @@ function App() {
 
   return (
     <div className="app">
+      {/* Brain background elements */}
+      <img src={brainBg1} alt="" className="brain-bg brain-bg-1" />
+      <img src={brainBg2} alt="" className="brain-bg brain-bg-2" />
+      
       <Header />
       
       <main className="main-content">
