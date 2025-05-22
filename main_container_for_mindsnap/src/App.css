@@ -78,11 +78,12 @@ body {
 
 /* Header styling */
 .navbar {
-  background-color: var(--kavia-dark);
+  background-color: rgba(10, 14, 23, 0.8);
+  backdrop-filter: blur(8px);
   padding: 16px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   position: fixed;
   top: 0;
   width: 100%;
@@ -99,17 +100,30 @@ body {
 }
 
 .logo {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   color: var(--text-color);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .logo-icon {
   color: var(--kavia-orange);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  filter: drop-shadow(0 0 6px var(--kavia-orange-glow));
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    filter: drop-shadow(0 0 3px var(--kavia-orange-glow));
+  }
+  to {
+    filter: drop-shadow(0 0 8px var(--kavia-orange-glow));
+  }
 }
 
 .container {
