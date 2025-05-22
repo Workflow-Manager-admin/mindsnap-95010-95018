@@ -1,18 +1,24 @@
 :root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --kavia-dark-lighter: #242424;
-  --kavia-dark-light: #2D2D2D;
+  /* Futuristic color palette */
+  --kavia-orange: #FF7E50;
+  --kavia-orange-glow: rgba(255, 126, 80, 0.5);
+  --kavia-dark: #0A0E17;
+  --kavia-dark-lighter: #141927;
+  --kavia-dark-light: #1E2538;
+  --kavia-accent-blue: #4FACFE;
+  --kavia-accent-blue-glow: rgba(79, 172, 254, 0.5);
+  --kavia-accent-purple: #9D50BB;
   --text-color: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.7);
   --border-color: rgba(255, 255, 255, 0.1);
-  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --futuristic-glow: 0 0 10px;
   
   /* Note type colors */
   --thought-color: #5E81AC;
-  --idea-color: #EBCB8B;
-  --reminder-color: #A3BE8C;
-  --memory-color: #B48EAD;
+  --idea-color: #FF9A5A;
+  --reminder-color: #4FACFE;
+  --memory-color: #9D50BB;
 }
 
 body {
