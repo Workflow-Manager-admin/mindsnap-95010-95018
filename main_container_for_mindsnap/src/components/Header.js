@@ -3,7 +3,7 @@ import { FaBrain } from 'react-icons/fa';
 
 /**
  * Header component for the MindSnap application
- * Displays the app title and logo
+ * Displays the app title and logo with futuristic styling
  */
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
         <div className="navbar-content">
           <div className="logo">
             <FaBrain className="logo-icon" />
-            <span>MindSnap</span>
+            <span>MINDSNAP</span>
           </div>
         </div>
       </div>
