@@ -7,6 +7,10 @@ import NoteList from './components/NoteList';
 import { loadNotes, saveNotes } from './utils/storage';
 import { createNote, updateNote, searchNotes, filterNotesByType, sortNotes } from './utils/noteUtils';
 
+// Import brain background SVGs
+import brainBg1 from './assets/brain-bg-1.svg';
+import brainBg2 from './assets/brain-bg-2.svg';
+
 function App() {
   const [notes, setNotes] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
