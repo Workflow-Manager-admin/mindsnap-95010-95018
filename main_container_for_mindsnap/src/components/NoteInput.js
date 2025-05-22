@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaPlus, FaLightbulb, FaClipboardCheck, FaBookOpen } from 'react-icons/fa';
+import { FaPlus, FaLightbulb, FaClipboardCheck, FaBookOpen, FaBrain } from 'react-icons/fa';
 
 /**
  * NoteInput component allows users to create new notes
